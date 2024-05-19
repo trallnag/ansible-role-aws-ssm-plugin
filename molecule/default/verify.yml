@@ -12,6 +12,7 @@
           fi
         executable: /usr/bin/bash
       register: get_installed_version
+      changed_when: false
 
     - name: Set installed version
       ansible.builtin.set_fact:
@@ -28,6 +29,7 @@
       vars:
         github: https://api.github.com/repos/aws/session-manager-plugin/releases/latest
       register: get_latest_version
+      changed_when: false
 
     - name: Set latest version
       ansible.builtin.set_fact:
