@@ -1,0 +1,2 @@
+__aws_ssm_plugin_packages:
+  - curl

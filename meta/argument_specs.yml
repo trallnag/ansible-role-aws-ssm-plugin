@@ -1,0 +1,13 @@
+argument_specs:
+  main:
+    short_description: Main entry point
+    options:
+      aws_ssm_plugin_version:
+        required: false
+        type: str
+        default: present
+        description:
+          - Version of the Session Manager plugin for the AWS CLI to install.
+          - Use special value `present` to install latest version once.
+          - Use special value `latest` to always install latest version.
+          - Exact versions like `1.2.553.0` are not supported.
