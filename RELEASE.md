@@ -36,7 +36,7 @@ git push origin master
 ```
 
 Check
-[workflow runs](https://github.com/trallnag/ansible-role-aws-cli/actions?query=branch%3Amaster)
+[workflow runs](https://github.com/trallnag/ansible-role-aws-ssm-plugin/actions?query=branch%3Amaster)
 in GitHub Actions and ensure everything is fine.
 
 Tag the latest commit with an annotated and signed tag:
@@ -59,16 +59,16 @@ git push origin v$VERSION
 ```
 
 This triggers the
-[release workflow](https://github.com/trallnag/ansible-role-aws-cli/actions/workflows/release.yaml)
+[release workflow](https://github.com/trallnag/ansible-role-aws-ssm-plugin/actions/workflows/release.yaml)
 which will import the role to Ansible Galaxy and create a release draft.
 
 ## Wrap Up
 
 Ensure that the new version has been imported to Ansible Galaxy
-[here](https://galaxy.ansible.com/trallnag/aws_cli).
+[here](https://galaxy.ansible.com/trallnag/aws_ssm_plugin).
 
 Go to the release page of this project on GitHub
-[here](https://github.com/trallnag/ansible-role-aws-cli/releases) and review the
-automatically created release draft.
+[here](https://github.com/trallnag/ansible-role-aws-ssm-plugin/releases) and
+review the automatically created release draft.
 
 Publish the release draft.
