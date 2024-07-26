@@ -57,7 +57,7 @@
   when: aws_ssm_plugin_version == "present" and aws_ssm_plugin_installed_version == ""
   ansible.builtin.set_fact:
     aws_ssm_plugin_archive_url_parts:
-      - https://s3.amazonaws.com/session-manager-downloads/plugin/latest/
+      - "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/"
       - "{{ aws_ssm_plugin_os_family_mapping[ansible_os_family]['group'] }}"
       - "_"
       - "{{ aws_ssm_plugin_cpu_arch_mapping[ansible_architecture] }}"
@@ -92,7 +92,7 @@
       when: aws_ssm_plugin_installed_version != aws_ssm_plugin_latest_version
       ansible.builtin.set_fact:
         aws_ssm_plugin_archive_url_parts:
-          - https://s3.amazonaws.com/session-manager-downloads/plugin/latest/
+          - "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/"
           - "{{ aws_ssm_plugin_os_family_mapping[ansible_os_family]['group'] }}"
           - "_"
           - "{{ aws_ssm_plugin_cpu_arch_mapping[ansible_architecture] }}"
@@ -101,7 +101,7 @@
 
 - name: Set archive URL from parts
   ansible.builtin.set_fact:
-    aws_ssm_plugin_archive_url: "{{ aws_ssm_plugin_archive_url_parts | join('') }}"
+    aws_ssm_plugin_archive_url: "{{ aws_ssm_plugin_archive_url_parts | join }}"
 
 - name: Print archive URL
   ansible.builtin.debug:
