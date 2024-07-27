@@ -63,7 +63,7 @@ which will import the role to Ansible Galaxy and create a release draft.
 ## Wrap Up
 
 Ensure that the new version has been imported to Ansible Galaxy
-[here](https://galaxy.ansible.com/trallnag/aws_cli).
+[here](https://galaxy.ansible.com/trallnag/aws_ssm_plugin).
 
 Go to the release page of this project on GitHub
 [here](https://github.com/trallnag/ansible-role-aws-ssm-plugin/releases) and
