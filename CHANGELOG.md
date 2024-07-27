@@ -7,6 +7,10 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0).
 
 ## Unreleased
 
+Nothing.
+
+## [0.2.0](https://github.com/trallnag/ansible-role-aws-ssm-plugin/compare/v0.1.0...v0.2.0) / 2024-07-27
+
 ### Changed
 
 - Replaced `ansible.builtin.yum` with `ansible.builtin.dnf`.
