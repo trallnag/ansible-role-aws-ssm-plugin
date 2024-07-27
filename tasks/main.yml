@@ -131,7 +131,7 @@
 
     - name: Install (RedHat)
       when: ansible_os_family == "RedHat"
-      ansible.builtin.yum:
+      ansible.builtin.dnf:
         name: "{{ aws_ssm_plugin_download_archive.dest }}"
         state: present
 
