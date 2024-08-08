@@ -121,7 +121,7 @@
         url: "{{ aws_ssm_plugin_archive_url }}"
         dest: "{{ aws_ssm_plugin_tmp_dir.path }}/aws-ssm-plugin-archive"
         force: true
-        mode: u=rw,g=r,o=r
+        mode: u=rw,g=,o=
       register: aws_ssm_plugin_download_archive
 
     - name: Install (Debian)
