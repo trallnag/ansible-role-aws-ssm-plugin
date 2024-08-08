@@ -10,7 +10,7 @@
           if command -v session-manager-plugin &> /dev/null; then
             session-manager-plugin --version
           fi
-        executable: /usr/bin/bash
+        executable: /bin/bash
       register: get_installed_version
       changed_when: false
 
