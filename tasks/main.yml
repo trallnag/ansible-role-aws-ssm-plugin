@@ -73,7 +73,7 @@
           set -euo pipefail
           curl --silent --fail-with-body {{ aws_ssm_plugin_github }} \
             | sed -n -E 's/.*"tag_name": "(.+)",.*/\1/p'
-        executable: /usr/bin/bash
+        executable: /bin/bash
       vars:
         aws_ssm_plugin_github: https://api.github.com/repos/aws/session-manager-plugin/releases/latest
       register: aws_ssm_plugin_get_latest_version

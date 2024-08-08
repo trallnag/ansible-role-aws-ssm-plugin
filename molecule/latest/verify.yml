@@ -10,7 +10,7 @@
           if command -v session-manager-plugin &> /dev/null; then
             session-manager-plugin --version
           fi
-        executable: /usr/bin/bash
+        executable: /bin/bash
       register: get_installed_version
       changed_when: false
 
@@ -25,7 +25,7 @@
           set -euo pipefail
           curl --silent --fail-with-body {{ github }} \
             | sed -n -E 's/.*"tag_name": "(.+)",.*/\1/p'
-        executable: /usr/bin/bash
+        executable: /bin/bash
       vars:
         github: https://api.github.com/repos/aws/session-manager-plugin/releases/latest
       register: get_latest_version
