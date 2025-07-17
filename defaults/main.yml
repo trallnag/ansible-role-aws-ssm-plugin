@@ -1,1 +1,1 @@
-aws_ssm_plugin_version: present
+aws_ssm_plugin__version: present

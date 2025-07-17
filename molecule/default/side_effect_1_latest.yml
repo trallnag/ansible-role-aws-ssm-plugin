@@ -1,0 +1,9 @@
+- name: Side Effect 1 Latest
+  hosts: all
+
+  tasks:
+    - name: Include role
+      ansible.builtin.include_role:
+        name: trallnag.aws_ssm_plugin
+      vars:
+        aws_ssm_plugin__version: latest

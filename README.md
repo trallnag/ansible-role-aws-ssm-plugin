@@ -1,4 +1,9 @@
-# Ansible Role `trallnag.aws_ssm_plugin` <!-- omit from toc -->
+[![status](https://img.shields.io/badge/status-active-brightgreen)](#project-status)
+[![release](https://img.shields.io/github/v/release/trallnag/ansible-role-aws-ssm-plugin)](https://github.com/trallnag/ansible-role-aws-ssm-plugin/releases)
+[![ci](https://img.shields.io/github/actions/workflow/status/trallnag/ansible-role-aws-ssm-plugin/ci.yaml?label=ci)](https://github.com/trallnag/ansible-role-aws-ssm-plugin/actions/workflows/ci.yaml)
+[![release](https://img.shields.io/github/actions/workflow/status/trallnag/ansible-role-aws-ssm-plugin/release.yaml?label=release)](https://github.com/trallnag/ansible-role-aws-ssm-plugin/actions/workflows/release.yaml)
+
+# Ansible Role `trallnag.aws_ssm_plugin`
 
 Role that installs the
 [Session Manager plugin for the AWS CLI](https://github.com/aws/session-manager-plugin).
@@ -6,25 +11,17 @@ Role that installs the
 Available on
 [Ansible Galaxy](https://galaxy.ansible.com/ui/standalone/roles/trallnag/aws_ssm_plugin).
 
-## Table of Contents <!-- omit from toc -->
-
-- [Requirements](#requirements)
-- [Role Parameters](#role-parameters)
-- [Project Status](#project-status)
-- [Contributing](#contributing)
-- [Licensing](#licensing)
-
 ## Requirements
 
 Some tasks require root privileges. Privilege escalation is performed with
 explicit `become: true` statements.
 
-## Role Parameters
+## Role parameters
 
-See [`meta/argument_specs.yml`](meta/argument_specs.yml).
+See [`meta/argument_specs.yml`](./meta/argument_specs.yml).
 
 ```yaml
-aws_ssm_plugin_version:
+aws_ssm_plugin__version:
   required: false
   type: str
   default: present
@@ -35,24 +32,27 @@ aws_ssm_plugin_version:
     - Exact versions like `1.2.553.0` are not supported.
 ```
 
-## Project Status
+## Project status
 
-Maintained and actively used.
+The project is maintained by me, [Tim](https://github.com/trallnag), and I am
+interested in keeping it alive as I am actively using it.
+
+## Versioning
+
+The project follows [Semantic Versioning](https://semver.org/).
 
 ## Contributing
 
-Contributions are welcome. Please refer to [`CONTRIBUTING.md`](CONTRIBUTING).
-
-Consult [`DEVELOPMENT.md`](DEVELOPMENT.md) for guidance regarding development.
-
-Read [`RELEASE.md`](RELEASE.md) for details about the release process.
+Contributions are welcome. Please refer to [`CONTRIBUTE.md`](./CONTRIBUTE.md).
 
 ## Licensing
 
 This work is licensed under the
-[Apache License](https://choosealicense.com/licenses/apache-2.0) (Apache-2.0), a
-permissive license whose main conditions require preservation of copyright and
-license notices. See [`LICENSE`](LICENSE) for the license text.
+[ISC license](https://en.wikipedia.org/wiki/ISC_license). See
+[`LICENSE`](./LICENSE) for the license text.
 
-This work comes with an explicit [`NOTICE`](NOTICE) file containing additional
-legal notices and information.
+## Template
+
+This project is based on the following
+[Copier](https://copier.readthedocs.io/en/stable/) template:
+<https://github.com/trallnag/copier-template-ansible-role>.
