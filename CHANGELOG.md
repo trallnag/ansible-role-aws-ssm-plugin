@@ -7,6 +7,10 @@ and adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0).
 
 ## Unreleased
 
+Nothing.
+
+## [1.0.0](https://github.com/trallnag/ansible-role-aws-ssm-plugin/compare/v0.2.0...v1.0.0) / 2025-07-18
+
 ### Changed
 
 - Switched permissions of temporary artifacts from `u=rw,g=r,o=r` to
